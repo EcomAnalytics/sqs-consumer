@@ -7,7 +7,7 @@
   "scripts": {
     "build": "npm run clean && tsc",
     "watch": "tsc --watch",
-    "clean": "rm -fr dist/*",
+    "clean": "rimraf dist/*",
     "prepublish": "npm run build",
     "pretest": "npm run build",
     "test": "mocha --recursive --full-trace --exit",
@@ -50,7 +50,8 @@
     "tslint-config-airbnb": "^5.11.2",
     "tslint-microsoft-contrib": "^6.2.0",
     "typescript": "^3.9.5",
-    "aws-sdk": "^2.699.0"
+    "aws-sdk": "^2.699.0",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "debug": "^4.1.1",
